@@ -1,4 +1,5 @@
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 public class DoublyLinkedList<T> implements Iterable<T> {
 
@@ -43,6 +44,21 @@ public class DoublyLinkedList<T> implements Iterable<T> {
 
     @Override
     public Iterator<T> iterator() {
-        return null;
+        return new LinkedListIterator();
+    }
+
+    private class LinkedListIterator implements Iterator<T> {
+        private ListNode<T> current = head;
+
+        public T next() {
+            if (!hasNext()) { throw new NoSuchElementException(); }
+            T item = current.getValue();
+            current = current.getNextNode();
+            return item;
+        }
+
+        public boolean hasNext() { return current != null; }
+
+        public void remove() { throw new UnsupportedOperationException(); }
     }
 }
