@@ -9,7 +9,7 @@ public class DoublyLinkedList<T> implements Iterable<T> {
 
     private ListNode<T> tail;
 
-    public void AddFirst(T element) {
+    public void addFirst(T element) {
         ListNode<T> newElement = new ListNode<>(element);
         if (this.count == 0) {
             this.tail = newElement;
@@ -22,7 +22,7 @@ public class DoublyLinkedList<T> implements Iterable<T> {
         this.count++;
     }
 
-    public void AddLast(T element) {
+    public void addLast(T element) {
         ListNode<T> newElement = new ListNode<>(element);
         if (this.count == 0) {
             this.head = newElement;
@@ -35,7 +35,7 @@ public class DoublyLinkedList<T> implements Iterable<T> {
         this.count++;
     }
 
-    public T RemoveFirst() {
+    public T removeFirst() {
         T removedElement = null;
         if (this.count == 0) {
             throw new NoSuchElementException("The list is empty.");
@@ -52,7 +52,7 @@ public class DoublyLinkedList<T> implements Iterable<T> {
         return removedElement;
     }
 
-    public T RemoveLast() {
+    public T removeLast() {
         T removedElement = null;
         if (this.count == 0) {
             throw new NoSuchElementException("The list is empty.");
@@ -69,7 +69,8 @@ public class DoublyLinkedList<T> implements Iterable<T> {
         return removedElement;
     }
 
-    public T[] ToArray() {
+    public T[] toArray() {
+        @SuppressWarnings("unchecked")
         T[] array = (T[])new Object[this.count];
         ListNode<T> currentElement = this.head;
         for (int i = 0; i < this.count; i++) {
