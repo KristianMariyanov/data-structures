@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/data-structures.iml" filepath="$PROJECT_DIR$/.idea/data-structures.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lined-list/double-linked-list.iml" filepath="$PROJECT_DIR$/lined-list/double-linked-list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/doubly-linked-list/double-linked-list.iml" filepath="$PROJECT_DIR$/doubly-linked-list/double-linked-list.iml" />
     </modules>
   </component>
 </project>
