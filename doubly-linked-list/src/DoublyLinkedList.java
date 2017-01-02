@@ -36,15 +36,52 @@ public class DoublyLinkedList<T> implements Iterable<T> {
     }
 
     public T RemoveFirst() {
-        throw new UnsupportedOperationException();
+        T removedElement = null;
+        if (this.count == 0) {
+            throw new NoSuchElementException("The list is empty.");
+        } else if(this.count == 1) {
+            this.head = null;
+            this.tail = null;
+        } else {
+            removedElement = this.head.getValue();
+            this.head.setNextNode(null);
+            this.head = this.head.getNextNode();
+            this.head.setPrevNode(null);
+        }
+
+        return removedElement;
     }
 
     public T RemoveLast() {
-        throw new UnsupportedOperationException();
+        T removedElement = null;
+        if (this.count == 0) {
+            throw new NoSuchElementException("The list is empty.");
+        } else if(this.count == 1) {
+            this.head = null;
+            this.tail = null;
+        } else {
+            removedElement = this.tail.getValue();
+            this.tail.setPrevNode(null);
+            this.tail = this.tail.getPrevNode();
+            this.tail.setNextNode(null);
+        }
+
+        return removedElement;
     }
 
     public T[] ToArray() {
-        throw new UnsupportedOperationException();
+        T[] array = (T[])new Object[this.count];
+        ListNode<T> currentElement = this.head;
+        for (int i = 0; i < this.count; i++) {
+            if (currentElement != null) {
+                array[i] = currentElement.getValue();
+                currentElement = currentElement.getNextNode();
+            } else {
+                throw new NullPointerException();
+            }
+        }
+
+        return array;
     }
 
     public int getCount() {
