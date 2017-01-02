@@ -23,7 +23,16 @@ public class DoublyLinkedList<T> implements Iterable<T> {
     }
 
     public void AddLast(T element) {
-        throw new UnsupportedOperationException();
+        ListNode<T> newElement = new ListNode<>(element);
+        if (this.count == 0) {
+            this.head = newElement;
+        } else {
+            this.tail.setNextNode(newElement);
+            newElement.setPrevNode(this.tail);
+        }
+
+        this.tail = newElement;
+        this.count++;
     }
 
     public T RemoveFirst() {
