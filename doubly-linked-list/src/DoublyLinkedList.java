@@ -89,6 +89,14 @@ public class DoublyLinkedList<T> implements Iterable<T> {
         return count;
     }
 
+    public ListNode<T> getHead() {
+        return this.head;
+    }
+
+    public ListNode<T> getTail() {
+        return this.tail;
+    }
+
     @Override
     public Iterator<T> iterator() {
         return new LinkedListIterator();
