@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/data-structures.iml" filepath="$PROJECT_DIR$/.idea/data-structures.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lined-list_main.iml" filepath="$PROJECT_DIR$/.idea/modules/lined-list_main.iml" group="lined-list" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lined-list_test.iml" filepath="$PROJECT_DIR$/.idea/modules/lined-list_test.iml" group="lined-list" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/linked-list.iml" filepath="$PROJECT_DIR$/.idea/modules/linked-list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/doubly-linked-list/doubly-linked-list.iml" filepath="$PROJECT_DIR$/doubly-linked-list/doubly-linked-list.iml" />
     </modules>
   </component>
 </project>
