@@ -1,3 +1,4 @@
+import java.util.EmptyStackException;
 import java.util.Iterator;
 import java.util.function.Consumer;
 
@@ -24,7 +25,16 @@ public class ArrayBasedStack<T> implements Iterable<T> {
     }
 
     public T Pop() {
+        if (this.count != 0) {
+            throw new EmptyStackException ();
+        }
+
+        this.count--;
         return this.removeLast();
+    }
+
+    public T Peek() {
+        return this.elements[this.count-1];
     }
 
     public int getCount() {
@@ -33,7 +43,7 @@ public class ArrayBasedStack<T> implements Iterable<T> {
 
     @Override
     public Iterator<T> iterator() {
-        return null;
+        return new ArrayBasedStackIterator();
     }
 
     @Override
@@ -45,7 +55,7 @@ public class ArrayBasedStack<T> implements Iterable<T> {
         T[] newElements = (T[])new Object[this.elements.length];
         System.arraycopy(this.elements, 0, newElements, 0, this.count -1);
 
-        T removedValue = this.elements[this.count];
+        T removedValue = this.elements[this.count-1];
         this.elements = newElements;
         return removedValue;
     }
@@ -53,5 +63,19 @@ public class ArrayBasedStack<T> implements Iterable<T> {
     private void Grow() {
         T[] newElements = (T[])new Object[this.elements.length * 2];
         System.arraycopy(this.elements, 0, newElements, 0, this.count);
+    }
+
+    private class ArrayBasedStackIterator implements Iterator<T> {
+        private int currentIndex = count - 1;
+
+        public T next() {
+            if (!hasNext()) { throw new EmptyStackException(); }
+            T item = elements[currentIndex--];
+            return item;
+        }
+
+        public boolean hasNext() { return currentIndex != -1; }
+
+        public void remove() { throw new UnsupportedOperationException(); }
     }
 }
