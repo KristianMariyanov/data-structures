@@ -1,5 +1,4 @@
 import java.util.Iterator;
-import java.util.Spliterator;
 import java.util.function.Consumer;
 
 public class ArrayBasedStack<T> implements Iterable<T> {
@@ -17,15 +16,20 @@ public class ArrayBasedStack<T> implements Iterable<T> {
     }
 
     public void Push(T element) {
-        throw new UnsupportedOperationException();
+        if (this.count == this.elements.length) {
+            this.Glow();
+        }
+
+        this.elements[this.count++] = element;
     }
 
     public T Pop() {
-        throw new UnsupportedOperationException();
+        T removedElement = this.removeLast();
+        return removedElement;
     }
 
     public int getCount() {
-        return count;
+        return this.count;
     }
 
     @Override
@@ -36,5 +40,19 @@ public class ArrayBasedStack<T> implements Iterable<T> {
     @Override
     public void forEach(Consumer<? super T> action) {
 
+    }
+
+    private T removeLast() {
+        T[] newElements = (T[])new Object[this.elements.length];
+        System.arraycopy(this.elements, 0, newElements, 0, this.count -1);
+
+        T removedValue = this.elements[this.count];
+        this.elements = newElements;
+        return removedValue;
+    }
+
+    private void Glow() {
+        T[] newElements = (T[])new Object[this.elements.length * 2];
+        System.arraycopy(this.elements, 0, newElements, 0, this.count);
     }
 }
