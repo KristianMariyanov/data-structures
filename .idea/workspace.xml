@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6641362-22cd-4c7e-bfaf-3568277651f7" name="Default" comment="Added some tests">
+    <list default="true" id="e6641362-22cd-4c7e-bfaf-3568277651f7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/array-based-stack/src/ArrayBasedStack.java" afterPath="$PROJECT_DIR$/array-based-stack/src/ArrayBasedStack.java" />
     </list>
@@ -70,18 +70,20 @@
       <file leaf-file-name="ArrayBasedStack.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/array-based-stack/src/ArrayBasedStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="151">
+              <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#246#247#0" expanded="true" />
                 <element signature="e#312#313#0" expanded="true" />
                 <element signature="e#356#357#0" expanded="true" />
                 <element signature="e#414#415#0" expanded="true" />
-                <element signature="e#722#723#0" expanded="true" />
-                <element signature="e#755#756#0" expanded="true" />
-                <element signature="e#806#807#0" expanded="true" />
-                <element signature="e#833#834#0" expanded="true" />
+                <element signature="e#610#611#0" expanded="true" />
+                <element signature="e#650#651#0" expanded="true" />
+                <element signature="e#679#680#0" expanded="true" />
+                <element signature="e#712#713#0" expanded="true" />
+                <element signature="e#763#764#0" expanded="true" />
+                <element signature="e#790#791#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1004,7 +1006,14 @@
       <option name="project" value="LOCAL" />
       <updated>1483479123000</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added some basics functionality of my stack.">
+      <created>1483800963458</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1483800963458</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1086,7 +1095,8 @@
     <MESSAGE value="Implemented removeFirst, removeLast and toArray methods of the DoublyLinedList" />
     <MESSAGE value="Renamed methods to to be consistent with java conventions and added SuppressWarnings for generic array creation" />
     <MESSAGE value="Added some tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some tests" />
+    <MESSAGE value="Added some basics functionality of my stack." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some basics functionality of my stack." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1441,18 +1451,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/array-based-stack/src/ArrayBasedStack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        <state relative-caret-position="151">
+          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#246#247#0" expanded="true" />
             <element signature="e#312#313#0" expanded="true" />
             <element signature="e#356#357#0" expanded="true" />
             <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
           </folding>
         </state>
       </provider>

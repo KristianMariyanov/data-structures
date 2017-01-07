@@ -17,15 +17,14 @@ public class ArrayBasedStack<T> implements Iterable<T> {
 
     public void Push(T element) {
         if (this.count == this.elements.length) {
-            this.Glow();
+            this.Grow();
         }
 
         this.elements[this.count++] = element;
     }
 
     public T Pop() {
-        T removedElement = this.removeLast();
-        return removedElement;
+        return this.removeLast();
     }
 
     public int getCount() {
@@ -51,7 +50,7 @@ public class ArrayBasedStack<T> implements Iterable<T> {
         return removedValue;
     }
 
-    private void Glow() {
+    private void Grow() {
         T[] newElements = (T[])new Object[this.elements.length * 2];
         System.arraycopy(this.elements, 0, newElements, 0, this.count);
     }
