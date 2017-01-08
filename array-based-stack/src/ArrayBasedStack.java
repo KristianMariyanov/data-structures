@@ -16,15 +16,15 @@ public class ArrayBasedStack<T> implements Iterable<T> {
         this.elements = (T[]) new Object[capacity];
     }
 
-    public void Push(T element) {
+    public void push(T element) {
         if (this.count == this.elements.length) {
-            this.Grow();
+            this.grow();
         }
 
         this.elements[this.count++] = element;
     }
 
-    public T Pop() {
+    public T pop() {
         if (this.count != 0) {
             throw new EmptyStackException ();
         }
@@ -33,7 +33,7 @@ public class ArrayBasedStack<T> implements Iterable<T> {
         return this.removeLast();
     }
 
-    public T Peek() {
+    public T peek() {
         return this.elements[this.count-1];
     }
 
@@ -60,7 +60,7 @@ public class ArrayBasedStack<T> implements Iterable<T> {
         return removedValue;
     }
 
-    private void Grow() {
+    private void grow() {
         T[] newElements = (T[])new Object[this.elements.length * 2];
         System.arraycopy(this.elements, 0, newElements, 0, this.count);
     }
