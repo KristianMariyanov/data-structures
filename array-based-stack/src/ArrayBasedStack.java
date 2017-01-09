@@ -43,6 +43,10 @@ public class ArrayBasedStack<T> implements Iterable<T> {
         return this.elements[this.count-1];
     }
 
+    public boolean isEmpty() {
+        return count == 0;
+    }
+
     public int getCount() {
         return this.count;
     }

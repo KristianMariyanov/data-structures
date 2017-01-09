@@ -3,6 +3,8 @@ import org.junit.Test;
 import java.util.EmptyStackException;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class ArrayBasedStackTest {
     @Test
@@ -71,5 +73,21 @@ public class ArrayBasedStackTest {
 
         assertEquals(20, stack.peek().intValue());
         assertEquals(2, stack.getCount());
+    }
+
+    @Test
+    public void testIsEmpty_emptyStack() {
+        ArrayBasedStack<Integer> stack = new ArrayBasedStack<>();
+
+        assertTrue(stack.isEmpty());
+    }
+
+    @Test
+    public void testIsEmpty_notEmptyStack() {
+        ArrayBasedStack<Integer> stack = new ArrayBasedStack<>();
+
+        stack.push(20);
+
+        assertFalse(stack.isEmpty());
     }
 }
