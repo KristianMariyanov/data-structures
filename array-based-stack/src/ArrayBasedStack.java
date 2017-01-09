@@ -47,7 +47,7 @@ public class ArrayBasedStack<T> implements Iterable<T> {
         return count == 0;
     }
 
-    public int getCount() {
+    public int size() {
         return this.count;
     }
 
