@@ -1,6 +1,7 @@
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
+@SuppressWarnings("unchecked")
 public class DoublyLinkedList<T> implements Iterable<T> {
 
     private int count;
@@ -72,7 +73,6 @@ public class DoublyLinkedList<T> implements Iterable<T> {
     }
 
     public T[] toArray() {
-        @SuppressWarnings("unchecked")
         T[] array = (T[])new Object[this.count];
         ListNode<T> currentElement = this.head;
         for (int i = 0; i < this.count; i++) {

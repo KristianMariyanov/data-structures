@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6641362-22cd-4c7e-bfaf-3568277651f7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/circular-queue/circular-queue.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/circular-queue/src/CircularQueue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/array-based-stack/src/ArrayBasedStack.java" afterPath="$PROJECT_DIR$/array-based-stack/src/ArrayBasedStack.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doubly-linked-list/src/DoublyLinkedList.java" afterPath="$PROJECT_DIR$/doubly-linked-list/src/DoublyLinkedList.java" />
@@ -1172,7 +1169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1483988839798</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Implemented CircularQueue">
+      <created>1484595022900</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1484595022900</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1286,7 +1290,8 @@
     <MESSAGE value="Fixed some bugs in my stack." />
     <MESSAGE value="Added isEmpty method for array based stack; added tests for the method" />
     <MESSAGE value="Change getCount method to size()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change getCount method to size()" />
+    <MESSAGE value="Implemented CircularQueue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented CircularQueue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,7 +1,9 @@
+import java.util.Arrays;
 import java.util.EmptyStackException;
 import java.util.Iterator;
 import java.util.function.Consumer;
 
+@SuppressWarnings("unchecked")
 public class ArrayBasedStack<T> implements Iterable<T> {
     private final int INITIAL_CAPACITY = 16;
 
@@ -49,6 +51,15 @@ public class ArrayBasedStack<T> implements Iterable<T> {
 
     public int size() {
         return this.count;
+    }
+
+    public T[] toArray(T[] array) {
+        if (array.length < this.count) {
+            return (T[]) Arrays.copyOf(this.elements, this.count, array.getClass());
+        }
+
+        System.arraycopy(this.elements, 0, array, 0, this.count);
+        return array;
     }
 
     @Override
