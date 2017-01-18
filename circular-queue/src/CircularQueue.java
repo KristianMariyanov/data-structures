@@ -18,7 +18,7 @@ public class CircularQueue<T> {
     }
 
     public void enqueue(T element) {
-        if(this.count >= this.elements.length) {
+        if(this.count + 1 >= this.elements.length) {
             this.grow();
         }
 
