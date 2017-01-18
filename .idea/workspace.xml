@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6641362-22cd-4c7e-bfaf-3568277651f7" name="Default" comment="">
+    <list default="true" id="e6641362-22cd-4c7e-bfaf-3568277651f7" name="Default" comment="Added all tests for Circular queue; Fixed one bug;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/circular-queue/circular-queue.iml" afterPath="$PROJECT_DIR$/circular-queue/circular-queue.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/circular-queue/src/CircularQueue.java" afterPath="$PROJECT_DIR$/circular-queue/src/CircularQueue.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/circular-queue/src/CircularQueueTest.java" afterPath="$PROJECT_DIR$/circular-queue/src/CircularQueueTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/lined-list/.gradle/" />
@@ -97,22 +95,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CircularQueue.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CircularQueue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/circular-queue/src/CircularQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+            <state relative-caret-position="60">
+              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CircularQueueTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CircularQueueTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/circular-queue/src/CircularQueueTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="216">
+              <caret line="101" column="5" lean-forward="false" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -465,8 +465,8 @@
         <option value="$PROJECT_DIR$/array-based-stack/src/ArrayBasedStackTest.java" />
         <option value="$PROJECT_DIR$/doubly-linked-list/src/DoublyLinkedList.java" />
         <option value="$PROJECT_DIR$/array-based-stack/src/ArrayBasedStack.java" />
-        <option value="$PROJECT_DIR$/circular-queue/src/CircularQueueTest.java" />
         <option value="$PROJECT_DIR$/circular-queue/src/CircularQueue.java" />
+        <option value="$PROJECT_DIR$/circular-queue/src/CircularQueueTest.java" />
       </list>
     </option>
   </component>
@@ -1160,7 +1160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1484670570959</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added all tests for Circular queue; Fixed one bug;">
+      <created>1484761275661</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1484761275661</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1277,7 +1284,8 @@
     <MESSAGE value="Implemented CircularQueue" />
     <MESSAGE value="Improvements in ArrayBasedStack and DoublyLinkedList; added toArray method." />
     <MESSAGE value="Added some tests for circular queue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some tests for circular queue" />
+    <MESSAGE value="Added all tests for Circular queue; Fixed one bug;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added all tests for Circular queue; Fixed one bug;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1507,19 +1515,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/circular-queue/src/CircularQueueTest.java">
+    <entry file="file://$PROJECT_DIR$/circular-queue/src/CircularQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="60">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/circular-queue/src/CircularQueue.java">
+    <entry file="file://$PROJECT_DIR$/circular-queue/src/CircularQueueTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="216">
+          <caret line="101" column="5" lean-forward="false" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
